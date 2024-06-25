@@ -9,7 +9,7 @@ const Challenge1 = () => {
   const [showTipOne, setShowTipOne] = useState(false);
   const [showTipTwo, setShowTipTwo] = useState(false);
 
-  const correctFlag = process.env.REACT_APP_SECRET_FLAG;
+  const correctFlag = process.env.SECRET_FLAG_CHALLENGE_ONE;
 
   const checkFlag = () => {
     if (flag === correctFlag) {

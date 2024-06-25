@@ -8,8 +8,7 @@ const Challenge2 = () => {
   const [showTipTwo, setShowTipTwo] = useState(false);
 
   useEffect(() => {
-    // Set the secret key as a cookie
-    document.cookie = "secretKey=yourpassword; path=/";
+    document.cookie = process.env.SECRET_FLAG_CHALLENGE_TWO;
   }, []);
 
   return (
