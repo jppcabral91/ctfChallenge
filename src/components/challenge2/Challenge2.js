@@ -7,7 +7,8 @@ const Challenge2 = () => {
   const [showTipOne, setShowTipOne] = useState(false);
   const [showTipTwo, setShowTipTwo] = useState(false);
 
-  const something = process.env.SECRET_FLAG_CHALLENGE_TWO + "; path=/"
+  const something = process.env.SECRET_FLAG_CHALLENGE_TWO;
+  
   useEffect(() => {
     document.cookie = something;
   }, []);
