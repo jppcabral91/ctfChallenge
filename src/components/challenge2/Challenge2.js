@@ -10,7 +10,7 @@ const Challenge2 = () => {
   
   useEffect(() => {
     const something = process.env.REACT_APP_SECRET_FLAG_CHALLENGE_TWO;
-    document.cookie = something;
+    document.cookie = `cookieName=${something}; SameSite=None; Secure`;
   }, []);
 
   return (
